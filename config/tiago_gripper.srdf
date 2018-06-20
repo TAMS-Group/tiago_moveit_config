@@ -30,6 +30,18 @@
         <joint name="arm_7_joint" />
         <joint name="arm_tool_joint" />
     </group>
+    <group name="arm_world">
+        <joint name="world_base_joint" />
+        <joint name="torso_lift_joint" />
+        <joint name="arm_1_joint" />
+        <joint name="arm_2_joint" />
+        <joint name="arm_3_joint" />
+        <joint name="arm_4_joint" />
+        <joint name="arm_5_joint" />
+        <joint name="arm_6_joint" />
+        <joint name="arm_7_joint" />
+        <joint name="arm_tool_joint" />
+    </group>
     <group name="gripper">
         <link name="gripper_left_finger_link" />
         <link name="gripper_right_finger_link" />
