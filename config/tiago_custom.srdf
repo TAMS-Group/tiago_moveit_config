@@ -31,7 +31,7 @@
         <joint name="arm_tool_joint" />
     </group>
     <group name="arm_world">
-        <joint name="world_base_joint" />
+        <joint name="world_joint" />
         <joint name="torso_lift_joint" />
         <joint name="arm_1_joint" />
         <joint name="arm_2_joint" />
