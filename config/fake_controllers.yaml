@@ -34,3 +34,7 @@ controller_list:
       - hand_index_joint
       - hand_thumb_joint
       - hand_mrl_joint
+
+initial:
+  - group: arm_torso
+    pose: home
