@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <launch>
   <!-- Selector for tiago type -->
-  <arg name="robot" default="titanium"/>
+  <arg name="robot" default="steel"/>
 
   <!-- By default, we do not start a database (it can be large) -->
   <arg name="db" default="false" />
