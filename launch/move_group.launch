@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <launch>
   <!-- Selector for tiago type -->
-  <arg name="robot" default="titanium"/>
+  <arg name="robot" default="steel"/>
   <arg name="camera" default="false"/>
 
   <include file="$(find tiago_moveit_config)/launch/planning_context.launch">
