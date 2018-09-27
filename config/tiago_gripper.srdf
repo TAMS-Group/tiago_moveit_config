@@ -9,6 +9,9 @@
     <!--JOINTS: When a joint is specified, the child link of that joint (which will always exist) is automatically included-->
     <!--CHAINS: When a chain is specified, all the links along the chain (including endpoints) are included in the group. Additionally, all the joints that are parents to included links are also included. This means that joints along the chain and the parent joint of the base link are included in the group-->
     <!--SUBGROUPS: Groups can also be formed by referencing to already defined group names-->
+    <group name="torso">
+        <joint name="torso_lift_joint" />
+    </group>
     <group name="arm">
         <joint name="arm_1_joint" />
         <joint name="arm_2_joint" />
@@ -49,6 +52,12 @@
         <joint name="gripper_left_finger_joint" />
         <joint name="gripper_right_finger_joint" />
     </group>
+    <group_state name="tall" group="torso">
+        <joint name="torso_lift_joint" value="0.35"/>
+    </group_state>
+    <group_state name="small" group="torso">
+        <joint name="torso_lift_joint" value="0.0"/>
+    </group_state>
     <group_state name="open" group="gripper">
         <joint name="gripper_left_finger_joint" value="0.044"/>
         <joint name="gripper_right_finger_joint" value="0.044"/>
