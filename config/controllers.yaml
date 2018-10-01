@@ -12,12 +12,16 @@ controller_list:
       - arm_5_joint
       - arm_6_joint
       - arm_7_joint
+    allowed_execution_duration_scaling: 2.0
+    allowed_goal_duration_margin: 2.0
   - name: torso_controller
     action_ns: follow_joint_trajectory
     type: FollowJointTrajectory
     default: true
     joints:
       - torso_lift_joint
+    allowed_execution_duration_scaling: 2.0
+    allowed_goal_duration_margin: 2.0
   - name: head_controller
     action_ns: follow_joint_trajectory
     type: FollowJointTrajectory
@@ -30,7 +34,7 @@ controller_list:
     type: FollowJointTrajectory
     default: true
     allowed_execution_duration_scaling: 2.5
-    allowed_goal_duration_margin: 1.0
+    allowed_goal_duration_margin: 5.0
     joints:
       - gripper_left_finger_joint
       - gripper_right_finger_joint
