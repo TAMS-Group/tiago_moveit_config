@@ -34,6 +34,9 @@ controller_list:
       - hand_index_joint
       - hand_thumb_joint
       - hand_mrl_joint
+  - name: fake_base_controller
+    joints:
+      - world_joint
 
 initial:
   - group: arm_torso
