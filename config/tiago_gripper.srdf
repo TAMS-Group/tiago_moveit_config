@@ -52,6 +52,9 @@
         <joint name="gripper_left_finger_joint" />
         <joint name="gripper_right_finger_joint" />
     </group>
+    <group name="base">
+        <joint name="world_joint" />
+    </group>
     <group_state name="tall" group="torso">
         <joint name="torso_lift_joint" value="0.35"/>
     </group_state>
